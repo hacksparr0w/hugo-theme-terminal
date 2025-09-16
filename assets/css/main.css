@@ -1,7 +1,7 @@
 :root {
-  --background: #1a170f;
-  --foreground: #eceae5;
-  --accent: #eec35e;
+  --background: #000;
+  --foreground: #fff;
+  --accent: #fff;
   --font-size: 1rem;
   --line-height: 1.54em;
   --radius: 0;
@@ -211,6 +211,12 @@ img.center {
 
 img.right {
   margin-left: auto;
+}
+
+img.avatar {
+  border: 0;
+  width: 320px;
+  margin: 80px auto;
 }
 
 figure {

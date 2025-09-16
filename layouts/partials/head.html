@@ -11,8 +11,6 @@
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" />
 
-{{ template "_internal/google_analytics.html" . }}
-
 {{ $css := resources.Match "css/*.css" }}
 {{ range $css }}
   {{ $styles := . | minify | fingerprint }}
@@ -28,8 +26,7 @@
 {{- end }}
 
 <!-- Icons -->
-<link rel="shortcut icon" href="{{ "favicon.png" | absURL }}">
-<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
+<link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
